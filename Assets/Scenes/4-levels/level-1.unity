@@ -973,6 +973,8 @@ GameObject:
   - component: {fileID: 1363711266115910}
   - component: {fileID: 1363711266115911}
   - component: {fileID: 1363711266115912}
+  - component: {fileID: 1363711266115914}
+  - component: {fileID: 1363711266115915}
   m_Layer: 0
   m_Name: PlayerSpaceship
   m_TagString: Player
@@ -1024,13 +1026,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363711266115907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b571bdbf83e603449e50749327e251f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Enemy
-  triggeringTagStronger: Senemy
 --- !u!114 &1363711266115911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +1073,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05bee36aced74a14d8dcd54d5424d604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggeringTag: Enemy
+--- !u!114 &1363711266115914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363711266115907}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0736d212cdb6c4ab8932633412e185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyToPress: 9
+  prefabToSpawn: {fileID: 0}
+  velocityOfSpawnedObject: {x: 0, y: 0, z: 0}
+--- !u!114 &1363711266115915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363711266115907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fcb3c910a103c48af9015c8b6a690a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTypeEnemy: 2
 --- !u!4 &4756833480714881
 Transform:
   m_ObjectHideFlags: 0
