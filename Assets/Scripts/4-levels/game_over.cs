@@ -10,9 +10,8 @@ public class game_over : MonoBehaviour
 
         for(int i=maxTypeEnemy;i>0;i--){
         if ((other.tag==i.ToString()||other.tag=="points")&& enabled) {
-            Debug.Log("Game over!");
             Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            
         }
         }
     }
