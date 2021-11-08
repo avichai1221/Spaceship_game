@@ -13,15 +13,16 @@ public class ForEnemyDestroyOnTrigger2D : MonoBehaviour {
     [SerializeField] int maxTypeEnemy;
 
 
-   
-
  private void OnTriggerEnter2D(Collider2D other) {
         for(int i=maxTypeEnemy;i>0;i--){
-        if (other.tag==i.ToString()&& enabled) {
+        if ((other.tag==i.ToString()||other.tag=="points")&& enabled) {
             Destroy(this.gameObject);
             Destroy(other.gameObject);
+            
         }
         }
+        
+        
     }
 
 
